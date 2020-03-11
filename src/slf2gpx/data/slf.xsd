@@ -1,0 +1,261 @@
+
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Activity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Computer">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="unit"/>
+                <xs:attribute type="xs:string" name="serial"/>
+                <xs:attribute type="xs:string" name="activityType"/>
+                <xs:attribute type="xs:string" name="dateCode"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GeneralInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="user">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:int" name="color"/>
+                      <xs:attribute type="xs:string" name="gender"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="sport"/>
+              <xs:element type="xs:int" name="age"/>
+              <xs:element type="xs:string" name="GUID"/>
+              <xs:element type="xs:string" name="activityStatus"/>
+              <xs:element type="xs:decimal" name="altitudeDifferencesDownhill"/>
+              <xs:element type="xs:decimal" name="altitudeDifferencesUphill"/>
+              <xs:element type="xs:decimal" name="averageAltitude"/>
+              <xs:element type="xs:decimal" name="averageCadence"/>
+              <xs:element type="xs:decimal" name="averageHeartrate"/>
+              <xs:element type="xs:decimal" name="averageInclineDownhill"/>
+              <xs:element type="xs:decimal" name="averageInclineUphill"/>
+              <xs:element type="xs:decimal" name="averagePower"/>
+              <xs:element type="xs:decimal" name="averagePowerWattPerKG"/>
+              <xs:element type="xs:decimal" name="averageRiseRate"/>
+              <xs:element type="xs:decimal" name="averageRiseRateUphill"/>
+              <xs:element type="xs:decimal" name="averageRiseRateDownhill"/>
+              <xs:element type="xs:decimal" name="averageSpeed"/>
+              <xs:element type="xs:decimal" name="averageSpeedDownhill"/>
+              <xs:element type="xs:decimal" name="averageSpeedUphill"/>
+              <xs:element type="xs:decimal" name="averageTemperature"/>
+              <xs:element type="xs:string" name="bike"/>
+              <xs:element type="xs:decimal" name="bikeWeight"/>
+              <xs:element type="xs:decimal" name="bodyHeight"/>
+              <xs:element type="xs:decimal" name="bodyWeight"/>
+              <xs:element type="xs:decimal" name="calories"/>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:decimal" name="distance"/>
+              <xs:element type="xs:decimal" name="distanceDownhill"/>
+              <xs:element type="xs:decimal" name="distanceUphill"/>
+              <xs:element type="xs:decimal" name="exerciseTime"/>
+              <xs:element type="xs:string" name="externalLink"/>
+              <xs:element type="xs:decimal" name="hrMax"/>
+              <xs:element type="xs:decimal" name="intensityZone1Start"/>
+              <xs:element type="xs:decimal" name="intensityZone2Start"/>
+              <xs:element type="xs:decimal" name="intensityZone3Start"/>
+              <xs:element type="xs:decimal" name="intensityZone4Start"/>
+              <xs:element type="xs:decimal" name="intensityZone4End"/>
+              <xs:element type="xs:decimal" name="latitudeEnd"/>
+              <xs:element type="xs:decimal" name="latitudeStart"/>
+              <xs:element type="xs:string" name="linkedTrackGUID"/>
+              <xs:element type="xs:decimal" name="longitudeEnd"/>
+              <xs:element type="xs:decimal" name="longitudeStart"/>
+              <xs:element type="xs:decimal" name="manualTemperature"/>
+              <xs:element type="xs:decimal" name="maximumAltitude"/>
+              <xs:element type="xs:decimal" name="maximumCadence"/>
+              <xs:element type="xs:decimal" name="maximumHeartrate"/>
+              <xs:element type="xs:decimal" name="maximumIncline"/>
+              <xs:element type="xs:decimal" name="maximumInclineDownhill"/>
+              <xs:element type="xs:decimal" name="maximumInclineUphill"/>
+              <xs:element type="xs:decimal" name="maximumPower"/>
+              <xs:element type="xs:decimal" name="maximumRiseRate"/>
+              <xs:element type="xs:decimal" name="maximumSpeed"/>
+              <xs:element type="xs:decimal" name="maximumTemperature"/>
+              <xs:element type="xs:string" name="measurement"/>
+              <xs:element type="xs:decimal" name="minimumAltitude"/>
+              <xs:element type="xs:decimal" name="minimumCadence"/>
+              <xs:element type="xs:decimal" name="minimumHeartrate"/>
+              <xs:element type="xs:decimal" name="minimumIncline"/>
+              <xs:element type="xs:decimal" name="minimumPower"/>
+              <xs:element type="xs:decimal" name="minimumRiseRate"/>
+              <xs:element type="xs:decimal" name="minimumSpeed"/>
+              <xs:element type="xs:decimal" name="minimumTemperature"/>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:decimal" name="pauseTime"/>
+              <xs:element type="xs:decimal" name="powerZone1Start"/>
+              <xs:element type="xs:decimal" name="powerZone2Start"/>
+              <xs:element type="xs:decimal" name="powerZone3Start"/>
+              <xs:element type="xs:decimal" name="powerZone4Start"/>
+              <xs:element type="xs:decimal" name="powerZone5Start"/>
+              <xs:element type="xs:decimal" name="powerZone6Start"/>
+              <xs:element type="xs:decimal" name="powerZone7End"/>
+              <xs:element type="xs:decimal" name="powerZone7Start"/>
+              <xs:element type="xs:decimal" name="rating"/>
+              <xs:element type="xs:decimal" name="feeling"/>
+              <xs:element type="xs:decimal" name="trainingTimeDownhill"/>
+              <xs:element type="xs:decimal" name="trainingTimeUphill"/>
+              <xs:element type="xs:decimal" name="samplingRate"/>
+              <xs:element type="xs:decimal" name="shoulderWidth"/>
+              <xs:element type="xs:string" name="startDate"/>
+              <xs:element type="xs:string" name="statistic"/>
+              <xs:element type="xs:decimal" name="timeInIntensityZone1"/>
+              <xs:element type="xs:decimal" name="timeInIntensityZone2"/>
+              <xs:element type="xs:decimal" name="timeInIntensityZone3"/>
+              <xs:element type="xs:decimal" name="timeInIntensityZone4"/>
+              <xs:element type="xs:decimal" name="timeOverIntensityZone"/>
+              <xs:element type="xs:decimal" name="timeUnderIntensityZone"/>
+              <xs:element type="xs:decimal" name="trackProfile"/>
+              <xs:element type="xs:decimal" name="trainingTime"/>
+              <xs:element type="xs:string" name="trainingType"/>
+              <xs:element type="xs:decimal" name="weather"/>
+              <xs:element type="xs:decimal" name="wheelSize"/>
+              <xs:element type="xs:decimal" name="wind"/>
+              <xs:element type="xs:decimal" name="workInKJ"/>
+              <xs:element type="xs:decimal" name="best5KTime"/>
+              <xs:element type="xs:decimal" name="best5KEntry"/>
+              <xs:element type="xs:decimal" name="powerNP"/>
+              <xs:element type="xs:decimal" name="powerTSS"/>
+              <xs:element type="xs:decimal" name="powerFTP"/>
+              <xs:element type="xs:decimal" name="pedalingTime"/>
+              <xs:element type="xs:decimal" name="pedalingIndex"/>
+              <xs:element type="xs:decimal" name="averageBalanceRight"/>
+              <xs:element type="xs:decimal" name="averageBalanceLeft"/>
+              <xs:element type="xs:decimal" name="powerIF"/>
+              <xs:element type="xs:decimal" name="torqueEffectLeft"/>
+              <xs:element type="xs:decimal" name="torqueEffectRight"/>
+              <xs:element type="xs:decimal" name="pedalSmoothLeft"/>
+              <xs:element type="xs:decimal" name="pedalSmoothRight"/>
+              <xs:element type="xs:decimal" name="averageCadenceCalc"/>
+              <xs:element type="xs:decimal" name="averagePowerCalc"/>
+              <xs:element type="xs:string" name="simpleHeaderValuesCalculation"/>
+              <xs:element type="xs:string" name="sharingInfo"/>
+              <xs:element type="xs:string" name="Participant"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Entries">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Entry" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:decimal" name="altitude" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="altitudeDifferencesDownhill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="altitudeDifferencesUphill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="cadence" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="calories" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="distanceAbsolute" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="distance" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="distanceDownhill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="distanceUphill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="heartrate" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="incline" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="latitude" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="longitude" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="power" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="powerPerKG" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="riseRate" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="speed" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="speedTime" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="temperature" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="trainingTime" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="trainingTimeAbsolute" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="trainingTimeDownhill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="trainingTimeUphill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="workInKJ" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="normalizedPower" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="rightBalance" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="leftBalance" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeBelowIntensityZones" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInIntensityZone1" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInIntensityZone2" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInIntensityZone3" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInIntensityZone4" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeAboveIntensityZones" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInPowerZone1" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInPowerZone2" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInPowerZone3" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInPowerZone4" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInPowerZone5" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInPowerZone6" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeInPowerZone7" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="pedalingTime" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="useForChart" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="useForTrack" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Markers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Marker" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:decimal" name="calories" use="optional"/>
+                      <xs:attribute type="xs:string" name="description" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="duration" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="number" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="time" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="timeAbsolute" use="optional"/>
+                      <xs:attribute type="xs:string" name="title" use="optional"/>
+                      <xs:attribute type="xs:string" name="type" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="distance" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="distanceAbsolute" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="latitude" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="longitude" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="altitudeDownhill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="altitudeUphill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="averageAltitude" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="averageCadence" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="averageHeartrate" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="averageInclineDownhill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="averageInclineUphill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="averagePower" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="averageSpeed" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="maximumAltitude" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="maximumCadence" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="maximumHeartrate" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="maximumInclineDownhill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="maximumInclineUphill" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="maximumPower" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="maximumSpeed" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="minimumHeartrate" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="minimumSpeed" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="normalizedPower" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="averageBalance" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="pedalingTime" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="leftTorqueEffectivity" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="rightTorqueEffectivity" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="leftPedalingSmoothness" use="optional"/>
+                      <xs:attribute type="xs:decimal" name="rightPedalingSmoothness" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="fileDate"/>
+      <xs:attribute type="xs:int" name="revision"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

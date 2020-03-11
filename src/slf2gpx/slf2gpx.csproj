@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="data\gpx.xsd" />
+    <None Remove="data\slf.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="data\gpx.xsd" />
+    <EmbeddedResource Include="data\slf.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="commandlineparser" Version="2.7.82" />
+  </ItemGroup>
+
+</Project>
